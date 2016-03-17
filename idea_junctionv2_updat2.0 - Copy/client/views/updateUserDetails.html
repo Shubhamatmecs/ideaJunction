@@ -1,0 +1,56 @@
+<div class="row centered-form" ng-init="init()">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+        	<div class="panel panel-default">
+        		<div class="panel-heading">
+			    		<h3 class="panel-title">Update User Details</h3>
+			 			</div>
+			 			<div class="panel-body">
+			    		<form role="form" ng-submit="updateUserDetail()">
+                            
+                
+			    					<div class="form-group">
+                                        <label class="form-lab">ID</label>
+			                <input type="text" name="id" id="id"  ng-model="user.user_id" class="form-control input-sm glowing-border" placeholder="id" ng-disabled="true">
+			    					</div>
+			    				
+
+                <div class="form-group">
+                      <label class="form-lab">Email</label>
+			    				<input type="email" name="email" id="email"  ng-model="user.email" class="form-control input-sm glowing border" placeholder="Email Address">
+			    			</div>
+
+                <div class="form-group">
+                      <label class="form-lab">First Name</label>
+        <input type="text" name="first_name" id="first_name"  ng-model="user.first_name" class="form-control input-sm glowing border" placeholder="First Name">
+        </div>
+
+        <div class="form-group">
+              <label class="form-lab">Middle Name</label>
+<input type="text" name="middle_name" id="middle_name" ng-model="user.middle_name" class="form-control input-sm glowing border" placeholder="Middle Name">
+</div>
+
+                            <div class="form-group">
+                                  <label class="form-lab">Last Name</label>
+			    				<input type="text" name="last_name" id="last_name" ng-model="user.last_name" class="form-control input-sm glowing border" placeholder="Last Name">
+			    			</div>
+
+                <div class="form-group">
+                      <label class="form-lab">Display Name</label>
+      <input type="text" name="display_name" id="display_name" ng-model="user.display_name" class="form-control input-sm glowing border" placeholder="Display Name">
+    </div>
+
+                            <div class="form-group">
+                                  <label class="form-lab">Mobile Number</label>
+			    				<input type="text" name="mobile" id="mobile" ng-model="user.mobile_number" class="form-control input-sm glowing border" placeholder="Mobile Number">
+			    			</div>
+
+
+			    			<input type="submit" value="Update" class="btn btn-info btn-block">
+
+			    		</form>
+			    	</div>
+	    		</div>
+            <div ><span class="bulb-idea"></span></div>
+    		</div>
+
+    	</div>

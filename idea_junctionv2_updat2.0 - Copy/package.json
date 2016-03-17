@@ -1,0 +1,26 @@
+{
+  "name": "idea_junction",
+  "version": "1.0.0",
+  "description": "Idea Junction where employees post their ideas.",
+  "main": "app.js",
+  "dependencies": {
+    "async": "^1.5.2",
+    "body-parser": "^1.15.0",
+    "connect-timeout": "^1.7.0",
+    "cookie-parser": "^1.4.1",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "mysql": "^2.10.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ideas",
+    "users"
+  ],
+  "author": "ATMECS",
+  "license": "ISC"
+}

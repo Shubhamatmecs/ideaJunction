@@ -1,0 +1,7 @@
+<ul ng-init="viewidea()">
+  <li>{{idea.title}}</li>
+  <li>{{idea.content}}</li>
+  <li>{{idea.id}}</li>
+</ul>
+<span ng-init="islikeIdea()"></span>
+<button ng-disabled="checked" ng-click="likeIdea()">{{liked}}</button>

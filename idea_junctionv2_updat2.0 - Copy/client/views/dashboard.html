@@ -1,0 +1,55 @@
+
+
+<nav ng-init="userDetails()" class = "navbar navbar-default" role = "navigation">
+
+   <div class = "navbar-header">
+      <a class = "navbar-brand" href = "#">Dashboard</a>
+   </div>
+
+   <div>
+      <span class = "navbar-text navbar-right">
+         Signed in as
+
+<div class="btn-group" id="myDropdown">
+  <a class="btn dropdown-toggle" data-toggle="dropdown">
+    {{user.display_name}}
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu">
+    <li><a href="#/users/updateUserDetails">Edit User Details</a></li>
+    <li><a href="#/users/changePassword">Change Password</a></li>
+    <li class="divider"></li>
+    <li><button class="logout" ng-click="logout()" >Logout</button></li>
+  </ul>
+</div>
+      </span>
+
+   </div>
+
+
+</nav>
+<div> <form ng-submit="filter()"><input type="text" placeholder="Startdate" ng-model="start_date"> <input type="text" placeholder="Enddate" ng-model="end_date"> 
+<input type="text" placeholder="Auther" ng-model="author"> <input type="text" placeholder="Title" ng-model="title"> <input type="submit" value="Filter"> </form></div>
+
+
+<table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Title of Idea</th>
+        <th>Idea Owner</th>
+      </tr>
+    </thead>
+    <tbody ng-repeat="idea in ideas">
+      <tr>
+        <td><a href="#/dashboard/details/{{idea.id}}"
+                          >{{idea.title}}</a></td>
+        <td> {{idea.user_id}}</td>
+
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+<button ng-click="next()">next</button>
+<button ng-click="postIdea()">Post Idea</button>
